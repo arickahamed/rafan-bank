@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.grettings {
+    margin: 1rem;
+    text-align: center;
+}
+
+.bank-name {
+    font-size: 2rem;
+    border-bottom: 0.1rem solid rgb(89, 89, 155);
+    color: rgb(24, 151, 30);
+    font-weight: 600;
+}
+
+.area {
+    
+    padding: 2rem;
+    background-color: rgb(235, 232, 232);
+    max-width: 50rem;
+    min-width: 10rem;
+    border: 0.1rem solid rgb(19, 85, 85);
+    border-radius: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    width: 18rem;
+}
+
+input:focus {
+    font-size: 1.5rem;
+    border: 0.1rem solid blue;
+}
+
+.one {
+    margin-left: 3rem;
+}
+
+.two {
+    margin-left: 1rem;
+}
+
+.btn {
+    color: rgb(248, 143, 124);
+    background-color: rgb(77, 77, 141);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+}
+
+.btn:hover {
+    font-size: 1.5rem;
+    background-color: rgb(235, 232, 232);
+    border: 0.1rem solid rgb(77, 77, 141);
+}
+
+.login-signup__info {
+    color: blue;
+}
+
+.its-hide {
+    display: none;
+}
+
+#signup-btn {
+    margin-top: 1rem;
+}
+
+.rights {
+    color: gray;
+    text-align: center;
+}
