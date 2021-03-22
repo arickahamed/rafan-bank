@@ -77,11 +77,11 @@ input:focus {
     display: none;
 }
 
-#signup-btn {
-    margin-top: 1rem;
-}
-
 .rights {
     color: gray;
     text-align: center;
+}
+
+#signup-btn {
+    margin-top: 1rem;
 }
