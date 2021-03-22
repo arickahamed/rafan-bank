@@ -4,10 +4,10 @@ const loginEmail = document.getElementById('login__email');
 const loginPass = document.getElementById('login__pass');
 const gotoSignup = document.getElementById('goto-signup');
 const signupForm = document.getElementById('signup-form');
-const signupFname = document.getElementById('signup__fname')
-const signupLname = document.getElementById('signup__lname')
-const signupEmail = document.getElementById('signup__email')
-const signupMobile = document.getElementById('signup__mobile')
+const signupFname = document.getElementById('signup__fname');
+const signupLname = document.getElementById('signup__lname');
+const signupEmail = document.getElementById('signup__email');
+const signupMobile = document.getElementById('signup__mobile');
 const signupBtn = document.getElementById('signup-btn');
 const gotoLogin = document.getElementById('goto-login');
 const dashboard = document.getElementById('dashboard');
@@ -44,13 +44,9 @@ loginBtn.addEventListener('click', function(e){
 })
 
 signupBtn.addEventListener('click', function(e){
-    // if (signupFname.value !== '' && signupFname !== 'null' && signupLname.value !== '' && signupLname !== 'null' && signupEmail.value !== '' && signupEmail !== 'null' && signupMobile.value !== '' && signupMobile !== 'null') {
-        signupForm.style.display = 'none';
-        dashboard.style.display = 'block';
-        e.preventDefault();
-    // } else {
-    //     alert('Form should not be blank. Please fullfill the form to validate');
-    // }
+            signupForm.style.display = 'none';
+            dashboard.style.display = 'block';
+            e.preventDefault();
 })
 
 goBack.addEventListener('click', function(){

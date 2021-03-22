@@ -13,10 +13,12 @@
                 href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Account login or signup starts -->
+        <!-- ----------Account login or signup starts----------- -->
         <section>
             <div class="container">
                 <h1 class="grettings">Welcome to <span class="bank-name"> Rafan Bank</span></h1>
+
+                <!-- ---------------Login part starts------------ -->
                 <div id="login-form" class="area">
                     <form class="" action="">
                         <h3>LogIn form</h3>
@@ -31,30 +33,34 @@
                     </form>
                     <p>If you don't have signup yet, <span id="goto-signup" class="login-signup__info">click here</span></p>
                 </div>
+                <!-- -----------Login part ends--------------- -->
+
+                <!-- ----------Signup part starts------------ -->
                 <div id="signup-form" class="its-hide area">
                     <h3>Signup form</h3>
                     <form action="">
                         <label for="">First Name:</label>
-                        <input  placeholder="Enter Your First Name Here" type="text" >
+                        <input id="signup__fname" placeholder="Enter Your First Name Here" type="text">
                         <br><br>
                         <label for="">Last Name:</label>
-                        <input  placeholder="Enter Your Last Name Here" type="text" >
+                        <input id="signup__lname" placeholder="Enter Your Last Name Here" type="text">
                         <br><br>
                         <label for="">Email:</label>
-                        <input  type="email" placeholder="Enter Your Email Here" name="" id="" >
+                        <input id="signup__email" type="email" placeholder="Enter Your Email Here">
                         <br><br>
                         <label for="">Mobile:</label>
-                        <input  placeholder="Enter Your Mobile Number Here"  type="tel" name="" id="" >
+                        <input id="signup__mobile" placeholder="Enter Your Mobile Number Here"  type="tel">
                         <br>
                         <input id="signup-btn" class="btn" type="submit" value="Signup" >
                     </form>
                     <p>If you have a account, <span class="login-signup__info" id="goto-login">click here</span> </p>
                 </div>
+                <!-- ------------Signup parts ends--------------- -->
             </div>            
         </section>
-        <!-- Account login or signup ends -->
+        <!-- ------------Account login or signup ends------------ -->
 
-        <!-- Dashboard part starts  -->
+        <!-- ---------------Dashboard part starts---------------  -->
         <section class="its-hide"  id="dashboard">
             <div class="area">
                 <h2>Sorry, Our work is in progress. 
@@ -64,8 +70,11 @@
                 <input type="submit" id="go-back" class="btn" value="go back">
             </div>
         </section>
+        <!-- ------------------Dashboard part ends--------------- -->
+
+        <!-- ---------------Footer part starts------------------ -->
         <footer><p class="rights">©2021 Arick Ahamed Joy. All rights reserved</p></footer>
-        <!-- Dashboard part ends -->
+        <!-- ---------------Footer part ends-------------------- -->
         <script src="script.js"></script>
     </body>
 </html>
