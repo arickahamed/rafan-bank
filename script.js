@@ -12,7 +12,14 @@ const signupPass = document.getElementById('signup__pass');
 const signupBtn = document.getElementById('signup-btn');
 const gotoLogin = document.getElementById('goto-login');
 const dashboard = document.getElementById('dashboard');
-const goBack = document.getElementById('go-back');
+const logOutBtn = document.getElementById('log-out__btn');
+const withdrawInput = document.getElementById('withdraw-input');
+const depositInput = document.getElementById('deposit-input');
+const checkBtn = document.getElementById('check-btn');
+const balance = document.getElementById('balance');
+
+
+// -----------login & signup page starts----------------- 
 
 gotoSignup.addEventListener('click', function(){
     loginForm.style.display = 'none';
@@ -54,7 +61,8 @@ signupBtn.addEventListener('click', function(e){
                 alert('Your password should be grater than 5.');
             } else {
                 signupForm.style.display = 'none';
-                dashboard.style.display = 'block';
+                loginForm.style.display = 'block';
+                gotoSignup.style.display = 'block';
                 e.preventDefault();
             }
     } else {
@@ -63,10 +71,34 @@ signupBtn.addEventListener('click', function(e){
     }
 })
 
-goBack.addEventListener('click', function(){
-    dashboard.style.display = 'none';
-    loginForm.style.display = 'block';
+// -----------------login & signup ends----------------------
+logOutBtn.addEventListener('click', function(){
+    signupForm.style.display = 'none';
+    gotoLogin.style.display = 'none';
     gotoSignup.style.display = 'block';
+    loginForm.style.display = 'block';
     loginEmail.value = '';
     loginPass.value = '';
+    dashboard.style.display = 'none';
+})
+
+checkBtn.addEventListener('click', function(){
+    const withdrawNumber = Number(withdrawInput.value);
+    const depositNumber = Number(depositInput.value);
+    const balanceNumber = Number(balance.innerText);
+    if (withdrawNumber == '' || withdrawNumber == 'null' ||withdrawNumber <= 0 || depositNumber == '' || depositNumber == 'null' || depositNumber <= 0 ) {
+        if(withdrawNumber > 0) {
+            const leatestBalance = balanceNumber - withdrawNumber;
+            balance.innerText = leatestBalance;
+            console.log(leatestBalance);
+        }else if(depositNumber > 0) {
+            const leatestBalance = balanceNumber + depositNumber;
+            balance.innerText = leatestBalance;
+            console.log(leatestBalance);
+        }
+    } else {
+        alert('Please input the right value.')
+    }
+    withdrawInput.value = '';
+    depositInput.value = '';
 })

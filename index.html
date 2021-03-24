@@ -66,12 +66,27 @@
 
         <!-- ---------------Dashboard part starts---------------  -->
         <section class="its-hide"  id="dashboard">
-            <div class="area">
-                <h2>Sorry, Our work is in progress. 
-                    Thank you for your interest.
-                </h2>
-                <br>
-                <input type="submit" id="go-back" class="btn" value="go back">
+            <div class="dashboard__info">
+                <div class="dashboard__info-balance">
+                    <h4>Balance</h4>
+                    <h1> <span id="balance">2050</span> $</h1>
+                </div>
+                <div class="dashboard__info-addremove">
+                    <div class="dashboard__info-common first">
+                        <h4>Withdraw</h4>
+                        <input type="number" class="withdraw-deposit-input" id="withdraw-input" placeholder="00 $">
+                    </div>
+                    <div class="dashboard__info-addremove-btn">
+                        <button id="check-btn" class="btn dashboard__info-addremove-btn__btn">click</button>
+                    </div>
+                    <div class="dashboard__info-common">
+                        <h4>Deposit</h4>
+                        <input type="number" id="deposit-input" class="withdraw-deposit-input" id="deposit-input" placeholder="00 $">
+                    </div>
+                </div>
+            </div>
+            <div class="log-out">
+                <button class="btn" id="log-out__btn">Log Out</button>
             </div>
         </section>
         <!-- ------------------Dashboard part ends--------------- -->

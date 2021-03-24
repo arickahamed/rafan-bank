@@ -21,7 +21,7 @@
     
     padding: 2rem;
     background-color: rgb(235, 232, 232);
-    max-width: 50rem;
+    max-width: 30rem;
     min-width: 10rem;
     border: 0.1rem solid rgb(19, 85, 85);
     border-radius: 1.5rem;
@@ -84,4 +84,68 @@ input:focus {
 
 #signup-btn {
     margin-top: 1rem;
+}
+
+/* dashboard starts  */
+
+.dashboard__info {
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50%;
+    min-width: 20rem;
+    height: auto;
+    background-color: rgb(235, 232, 232);
+}
+
+.dashboard__info-balance {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    border-bottom: 0.05rem solid black;
+}
+
+.dashboard__info-addremove {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard__info-addremove-btn {
+    float: right;
+    
+}
+
+.dashboard__info-addremove-btn__btn {
+    border: none;
+    width: 5rem;
+    outline: none;
+}
+
+.dashboard__info-common {
+    width: 70%;
+    text-align: center;
+    border-right: 0.01rem solid black;
+}
+
+.withdraw-deposit-input {
+    width: 7rem;
+}
+
+.first {
+    border-bottom: 0.01rem solid black;
+}
+
+.log-out {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#log-out__btn {
+    display: block;
+    margin: 0 auto;
+    outline: none;
 }
